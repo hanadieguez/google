@@ -8,6 +8,10 @@ body {
   background-color: #202124;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -48,4 +52,97 @@ a {
 .main-content {
   text-align: center;
   margin-top: 200px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin: 25px auto 0;
+  padding: 10px 15px;
+  width: 500px;
+  border-radius: 25px;
+  background-color: #202124;
+  border: 1px solid #5f6368;
+  color: #ffffff;
+}
+
+.search-bar:hover,
+.search-bar:hover .search-input {
+  background-color: #303134;
+  border-color: #303134;
+}
+
+.search-bar:hover {
+  box-shadow: 0px 5px 5px 1px #1b1b1d;
+}
+
+.search-input:focus {
+  background-color: #303134;
+  outline-color: #303134;
+  outline: none;
+}
+
+.dark-gray {
+  background-color: #303134;
+  border-color: #303134;
+  box-shadow: 0px 5px 5px 1px #1b1b1d;
+}
+
+.search-input {
+  background-color: #202124;
+  border: none;
+  padding: 7px;
+  width: 350px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.search-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.search-btn a {
+  padding: 12px 15px;
+  background-color: #303134;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer,
+.footer a {
+  background-color: #171717;
+  color: #9aa0a6;
+}
+
+.footer-country,
+.footer-links {
+  padding: 15px 30px;
+}
+
+.footer div:first-child {
+  border-bottom: 1px solid #3c4043;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links ul {
+  display: flex;
+  gap: 28px;
 }
